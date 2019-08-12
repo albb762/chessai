@@ -28,8 +28,8 @@ def get_date(files_list,sample_size=None):
 
 def main():
     file_pgns=os.listdir('data')
-    train_x,train_y = get_date(file_pgns,1e5)
-    np.savez('train_data_10k.npy',train_x,train_y)
+    train_x,train_y = get_date(file_pgns,10000)
+    np.savez('train_data_10000.npy',train_x,train_y)
     print('saved')
 
 
