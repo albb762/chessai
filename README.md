@@ -6,6 +6,9 @@ img
 
 Usage
 -----
+```
+python value.py
+```
 
 TODO:
 1. try one-hot encoding
