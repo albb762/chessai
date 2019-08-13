@@ -7,7 +7,7 @@ img
 Usage
 -----
 ```
-python value.py
+python app.py
 ```
 
 TODO:
@@ -16,4 +16,5 @@ TODO:
 3. use more data
 4. different set for CNN
 5. compare with twitchchess or other network
+6. check negative output
 
