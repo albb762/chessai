@@ -101,13 +101,15 @@ def compare_model(time,stockfish=True):
 v = Old_model_Veluator(prams_path)
 # compare_model(10)
 
-board = chess.Board()
+## collect the output of model for analysis
 reslist =[]
-for i in range(444400):
-    if not board.is_game_over():
-        board,_,l = v.play_one_step(board,True)
-        reslist.extend(l)
-    else:
-        # print(board.result())
-        break
+for x in range(10):
+    board = chess.Board()
+    for i in range(444400):
+        if not board.is_game_over():
+            board,_,l = v.play_one_step(board,True)
+            reslist.extend(l)
+        else:
+            # print(board.result())
+            break
 print(reslist)
